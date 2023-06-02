@@ -5,11 +5,11 @@
 num = int(input("Введите номер Вашего билета: "))
 sum_first_digit = int(0)
 sum_last_digit = int(0)
-for i in range(3):
+for i in range(3): # Подсчет суммы трех крайних цифр
     last_digit_1 = num % 10  # Нахождение последней цифры в числе
     sum_last_digit = sum_last_digit + last_digit_1  # Суммирование цифр
     num = num // 10  # Удаление крайней цифры в числе
-for i in range(3):
+for i in range(3): # Подсчет суммы трех первых цифр
     last_digit_2 = num % 10  # Нахождение последней цифры в числе
     sum_first_digit = sum_first_digit + last_digit_2  # Суммирование цифр
     num = num // 10  # Удаление крайней цифры в числе
